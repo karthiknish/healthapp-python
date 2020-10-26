@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+<title>Home</title>
+<!-- CSS -->
+
+</head>
+    <style>
+    #main-footer
+    {
+      color: #FFFFFF;
+      font-family: "Segoe UI";
+      background: #2B2B2B;
+      text-align: center;
+      margin-top: 108px;
+      padding: 16px;
+      bottom: 8px;
+    }</style>
+<body>
+<h1 style='margin-left:50%;margin-top: 0;'>Healthapp</h1>
+ <div class="cardcont">
+  
+ <div class='card cardresp'>
+     <a href="/malaria">
+    <img class='cardtop' src="https://i0.wp.com/cdn-prod.medicalnewstoday.com/content/images/articles/150/150670/malaria-is-passed-on-by-the-anopheles-mosquito.jpg?w=1155&h=1642">
+     <p>Malaria</p>
+   </a>
+  </div>
+ <div class='card cardresp'>
+       <a href="/cancer">
+           <img class='cardtop' src="https://scx2.b-cdn.net/gfx/news/2018/5c18fceef3bbb.jpg">
+           <p>Cancer</p>
+       </a>
+      </div>
+     <div class='card cardresp'>
+       <a href="/liver">
+           <img class='cardtop' src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQf2utY3YJYKxlQDdojsT3RsjDyHKtJ8gtcAw&usqp=CAU" >
+           <p>Liver</p>
+       </a>
+      </div> <div class='card cardresp'>
+       <a href="/diabetes">
+           <img class='cardtop'  src="https://www.lifespan.io/wp-content/uploads/2020/03/diabetes-meter.jpg">
+           <p>Diabetes</p>
+       </a>
+      </div><div class='card cardresp'>
+       <a href="/heart">
+           <img class='cardtop'src="https://images.medicinenet.com/images/slideshow/heart-disease-visual-guide-s2-heart-attack.jpg"
+>
+           <p>Heart</p>
+       </a>
+      </div><div class='card cardresp'>
+       <a href="/kidney">
+           <img class='cardtop' src="https://i0.wp.com/cdn-prod.medicalnewstoday.com/content/images/articles/314/314059/kidney-disease-in-3d-render.jpg?w=1155&h=1541"
+
+>
+           <p>Kidney</p>
+       </a>
+      </div>
+      <div class='card cardresp'>
+       <a href="/pneumonia">
+           <img class='cardtop' src="data:image/jpeg;base64,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"
+ >
+           <p>Pneumonia</p>
+       </a>
+      </div>
+  
+ </div>
+
+  <div class= "container">
+
+     <div class="col-md-8">
+          {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+              {% for category, message in messages %}
+                <div class="alert alert-{{ category }}">
+                  {{ message }}
+                </div>
+              {% endfor %}
+            {% endif %}
+          {% endwith %}
+          {% block content %}{% endblock %}
+  </div>
+
+    <h3>Details </h3><div>
+  <a href="/about">about</a>
+</div>
+    <p>Welcome to the home page of the app.</p>
+    <p>This is mainly based on as the application of the machine learning,meant to be employed in the remote and the downtrodden area.
+      <h3>Overview</h3>
+      In todays time we see a lot of the shortage of the doctors in the world especially in India.A lot of people are suffering a lot without the help of the proper medical checkup.Also most of the cases many cases arise leading to dealth due to lack of timely medical checkup<p>
+        <p>So to cope up with all of those problems this app is designed which would prove its benefits upto much extent.
+        </p>
+        <hr>
+    </p>
+    <h3>Application</h3>
+    <ul>
+      <li>To remove the dependencies on the doctors</li>
+      <li>To help out the poor and helpless people with the normal medical checkup</li>
+      <li>To help people avoid paying huge  amount to the doctors unnecessarily</li>
+      <li>To extend the role of the technology in the medical field</li>
+    </ul>
+
+
+
+  </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<footer id="main-footer">
+      Copyright &copy; 2020
+    </footer>
+</body>
+</html>
